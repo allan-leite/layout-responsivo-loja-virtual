@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #086df1;
+    color: white;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.navegacao li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.container main {
+    display: block;
+}
+
+.sobre {
+    display: flex;
+}
+
+.imagem img {
+    width: 340px;
+    margin-right: 32px;
+}
+
+.descricao h2 {
+    color: #086df1;
+    padding-bottom: 16px;
+    border-bottom: solid 2px #086df1;
+    font-style: italic;
+}
+
+.descricao p {
+    padding-top: 32px;
+}
+
+.produtos {
+    margin-top: 64px;
+}
+
+.produtos h2 {
+    color: #086df1;
+    font-style: italic;
+    border-bottom: solid 2px #086df1;
+    padding-bottom: 16px;
+}
+
+.produtos div{
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    gap: 2%;
+    margin-top: 40px;
+}
+
+.produtos img{
+    width: 100%;
+}
+
+.produtos button {
+    width: 100%;
+    background-color: #086df1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.produtos div section h3 {
+    margin-top: 32px;
+}
+
+.produtos div section p {
+    margin: 16px 0;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 290px;
+    }
+    
+    .sobre {
+        display: block;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+    .descricao {
+        margin-top: 32px;
+    }
+
+    .produtos div {
+        display: block;
+    }
+
+    .produtos div section{
+        margin-top: 32px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width:1023px) {
+    .container {
+        max-width: 641px;
+    }
+    
+    .sobre {
+        display: block;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+    .descricao {
+        margin-top: 32px;
+    }
+
+    .produtos div{
+        grid-template-columns: repeat(2, 49%);
+        gap: 2%;
+    }
+}
